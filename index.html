@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Hema G — Biomedical Engineering Student at SRM Institute. Medical devices, IoT health systems, AI healthcare, embedded systems."/>
+<title>Hema G — Biomedical Engineer</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
+
+<!-- Three.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursor-ring"></div>
+
+<!-- 3D Background Canvas -->
+<canvas id="bg-canvas"></canvas>
+<div class="grid-overlay"></div>
+
+<!-- ═══════════════ NAV ═══════════════ -->
+<nav>
+  <a href="#hero" class="nav-logo">H<span>EMA G.</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#achievements">Awards</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="nav-pill">SRM · BME · 3rd Year</span>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section id="hero">
+  <div class="hero-left">
+    <p class="hero-tag">Biomedical Engineering Student</p>
+    <h1 class="hero-name">
+      HEMA<br>
+      <span class="outline-text">G.</span>
+    </h1>
+    <p class="hero-sub">
+      <span id="typed-role">Biomedical Engineer</span> — engineering at the intersection of
+      <em>medicine</em>, <em>technology</em> &amp; <em>human impact</em>.
+    </p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      <a href="https://www.linkedin.com/in/hema-g200510" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">9.42</div>
+        <div class="stat-label">CGPA / 10</div>
+      </div>
+      <div>
+        <div class="stat-num">6+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div>
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div>
+        <div class="stat-num">3rd</div>
+        <div class="stat-label">Year BME</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="profile-card">
+      <div class="profile-corner corner-tl"></div>
+      <div class="profile-corner corner-tr"></div>
+      <div class="profile-corner corner-bl"></div>
+      <div class="profile-corner corner-br"></div>
+      <div class="profile-img-wrap">
+        <img src="images/profile.jpg" alt="Hema G" loading="lazy"/>
+        <div class="profile-card-badge">
+          <span class="pcb-cgpa">CGPA 9.42</span>
+          <div class="pcb-name">Hema G</div>
+          <div class="pcb-role">Healthcare Domain Head · SRM University</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+</section>
+
+<!-- ═══════════════ ABOUT ═══════════════ -->
+<section id="about">
+  <div class="section-wrap">
+    <div class="about-grid">
+      <div class="reveal-left">
+        <div class="section-label">Who I Am</div>
+        <h2 class="section-heading" style="margin-bottom:1.5rem">
+          Engineering<br>
+          <span class="outline-text">Healthcare</span>
+        </h2>
+        <p class="about-text">
+          I'm a dedicated third-year Biomedical Engineering student at SRM Institute of Science and Technology, Kattankulathur, with a CGPA of 9.42/10. I'm passionate about creating medical devices and healthcare innovation that directly improve patient outcomes.
+        </p>
+        <p class="about-text">
+          Currently serving as <strong style="color:var(--accent)">Healthcare Domain Head at Aakash Research Labs</strong>, I lead a project team focused on innovation in medical technology. I also manage student affairs and budgeting as a member of the Directorate of Student Affairs (DSA) at SRM.
+        </p>
+        <p class="about-text">
+          My internship at <strong style="color:var(--accent)">Sri Narayani Hospital & Research Center</strong> gave me hands-on clinical experience with medical equipment operation, maintenance, and hospital safety standards.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="hi-icon">🏥</div>
+            <div class="hi-label">Institution</div>
+            <div class="hi-val">SRM IST, Kattankulathur</div>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-icon">📊</div>
+            <div class="hi-label">CGPA</div>
+            <div class="hi-val">9.42 / 10</div>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-icon">🌐</div>
+            <div class="hi-label">Languages</div>
+            <div class="hi-val">Tamil, English</div>
+          </div>
+          <div class="highlight-item">
+            <div class="hi-icon">📍</div>
+            <div class="hi-label">Location</div>
+            <div class="hi-val">Tirupattur, Tamil Nadu</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="college-img-wrap">
+          <img src="images/college.webp" alt="SRM Institute" loading="lazy"/>
+        </div>
+        <div class="about-exp-cards" style="margin-top:1.2rem">
+          <div class="exp-card">
+            <div class="exp-dot"></div>
+            <div>
+              <div class="exp-title">Healthcare Domain Head</div>
+              <div class="exp-org">Aakash Research Labs — SRM University</div>
+            </div>
+            <div class="exp-date">June 2025 – Present</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-dot" style="background:var(--accent2);box-shadow:0 0 8px var(--accent2)"></div>
+            <div>
+              <div class="exp-title">Member, DSA</div>
+              <div class="exp-org">Directorate of Student Affairs, SRM</div>
+            </div>
+            <div class="exp-date">April 2025 – Present</div>
+          </div>
+          <div class="exp-card">
+            <div class="exp-dot" style="background:var(--accent3);box-shadow:0 0 8px var(--accent3)"></div>
+            <div>
+              <div class="exp-title">Biomedical Engineer Intern</div>
+              <div class="exp-org">Sri Narayani Hospital & Research Center</div>
+            </div>
+            <div class="exp-date">December 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ PROJECTS ═══════════════ -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="projects-intro reveal">
+      <div>
+        <div class="section-label">What I've Built</div>
+        <h2 class="section-heading">Projects &amp;<br><span class="outline-text">Research</span></h2>
+      </div>
+      <a href="#contact" class="btn btn-outline">Collaborate →</a>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 — AI Sepsis (FEATURED, wide) -->
+      <div class="project-card wide reveal">
+        <div class="project-img-wrap">
+          <img src="images/ai_sepsis.jpg" alt="AI Sepsis ICU Monitor" class="project-img"/>
+          <div class="project-img-overlay"></div>
+          <span class="project-num-badge">06 / LATEST</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">AI-Based Sepsis ICU Monitoring System</div>
+          <div class="project-desc">Built an AI-driven ICU monitoring system for early detection of sepsis using patient data analytics. Deployed live on Hugging Face Spaces for real-world accessibility. Demonstrates the power of machine learning in critical care environments.</div>
+          <div class="project-tags">
+            <span class="tag tag-cyan">Python</span>
+            <span class="tag tag-purple">Machine Learning</span>
+            <span class="tag tag-green">Hugging Face</span>
+            <span class="tag tag-amber">ICU / Critical Care</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 — Smart Cane -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/smart_cane1.jpg" alt="Smart Cane" class="project-img"/>
+          <div class="project-img-overlay"></div>
+          <span class="project-num-badge">05</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Multi-Sensor Smart Cane for the Visually Impaired</div>
+          <div class="project-desc">Assistive cane integrating ultrasonic, infrared, and rain sensors for real-time obstacle detection and navigation safety. Built with Arduino Nano, Embedded C & Tinkercad.</div>
+          <div class="project-tags">
+            <span class="tag tag-cyan">Arduino Nano</span>
+            <span class="tag tag-purple">Embedded C</span>
+            <span class="tag tag-green">Assistive Tech</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 — IoT Pulse Oximeter -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/bm_project.jpg" alt="IoT Pulse Oximeter" class="project-img"/>
+          <div class="project-img-overlay"></div>
+          <span class="project-num-badge">02</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">IoT-Based Pulse Oximeter with Blynk Integration</div>
+          <div class="project-desc">Portable, low-cost device using MAX30100 and ESP8266 to monitor heart rate (BPM) and SpO₂ in real time. Data displayed on OLED and wirelessly transmitted to Blynk app.</div>
+          <div class="project-tags">
+            <span class="tag tag-cyan">MAX30100</span>
+            <span class="tag tag-purple">ESP8266</span>
+            <span class="tag tag-green">IoT / Blynk</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 — Placental Model -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/placental.jpg" alt="Placental Evolution Model" class="project-img"/>
+          <div class="project-img-overlay"></div>
+          <span class="project-num-badge">03</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Placental Evolution — Biomedical Model</div>
+          <div class="project-desc">Educational biomedical model demonstrating structural &amp; functional changes of the placenta across key gestation stages (Weeks 13, 20, 30, 40) using PDMS and PCL biomaterials.</div>
+          <div class="project-tags">
+            <span class="tag tag-cyan">PDMS</span>
+            <span class="tag tag-purple">PCL</span>
+            <span class="tag tag-green">Biomaterials</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 — Heartbeat sensor -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/smps.jpg" alt="Heartbeat Sensor Circuit" class="project-img"/>
+          <div class="project-img-overlay"></div>
+          <span class="project-num-badge">04</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Heartbeat Sensor Circuit</div>
+          <div class="project-desc">Heartbeat sensor using LM358 op-amp and IR LED photodiode to detect pulse rate by measuring blood flow changes at fingertip. Output shown as BPM with blinking LED pulse indicator.</div>
+          <div class="project-tags">
+            <span class="tag tag-cyan">LM358 Op-Amp</span>
+            <span class="tag tag-purple">IR Sensor</span>
+            <span class="tag tag-amber">Analog Circuit</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 — Solar Charger -->
+      <div class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/solar.jpg" alt="Solar Charger" class="project-img"/>
+          <div class="project-img-overlay"></div>
+          <span class="project-num-badge">01</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Solar-Based Mobile Phone Charger</div>
+          <div class="project-desc">Eco-friendly solar charger converting sunlight to electricity for mobile devices. Built with solar panel, rechargeable battery, voltage regulator, USB module, and multimeter for validation.</div>
+          <div class="project-tags">
+            <span class="tag tag-green">Solar Energy</span>
+            <span class="tag tag-cyan">Voltage Regulator</span>
+            <span class="tag tag-amber">Green Tech</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ SKILLS ═══════════════ -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label">Expertise</div>
+      <h2 class="section-heading" style="margin-bottom:0">Skills &amp; <span class="outline-text">Tools</span></h2>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+        <div class="sg-title">🔧 Technical Tools</div>
+        <div class="skill-item"><span>Wokwi</span><div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div></div>
+        <div class="skill-item"><span>Easy-EDA</span><div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div></div>
+        <div class="skill-item"><span>KiCad</span><div class="skill-bar"><div class="skill-fill" data-width="68%"></div></div></div>
+        <div class="skill-item"><span>Tinkercad</span><div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+        <div class="skill-item"><span>Cadence</span><div class="skill-bar"><div class="skill-fill" data-width="60%"></div></div></div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="sg-title">💻 Programming</div>
+        <div class="skill-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div></div>
+        <div class="skill-item"><span>MATLAB</span><div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div></div>
+        <div class="skill-item"><span>Embedded C</span><div class="skill-bar"><div class="skill-fill" data-width="72%"></div></div></div>
+        <div class="skill-item"><span>Arduino IDE</span><div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div></div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="sg-title">⚕️ Biomedical</div>
+        <div class="skill-item"><span>Medical Devices</span><div class="skill-bar"><div class="skill-fill" data-width="82%"></div></div></div>
+        <div class="skill-item"><span>Biosensors</span><div class="skill-bar"><div class="skill-fill" data-width="78%"></div></div></div>
+        <div class="skill-item"><span>Signal Processing</span><div class="skill-bar"><div class="skill-fill" data-width="76%"></div></div></div>
+        <div class="skill-item"><span>Biomaterials</span><div class="skill-bar"><div class="skill-fill" data-width="65%"></div></div></div>
+        <div class="skill-item"><span>Image Processing</span><div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div></div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="sg-title">🤝 Soft Skills</div>
+        <div class="skill-item"><span>Project Management</span><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+        <div class="skill-item"><span>Leadership</span><div class="skill-bar"><div class="skill-fill" data-width="88%"></div></div></div>
+        <div class="skill-item"><span>Communication</span><div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div></div>
+        <div class="skill-item"><span>Problem-Solving</span><div class="skill-bar"><div class="skill-fill" data-width="92%"></div></div></div>
+        <div class="skill-item"><span>Teamwork</span><div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+<section id="certifications">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label">Credentials</div>
+      <h2 class="section-heading" style="margin-bottom:0">Certifications &amp; <span class="outline-text">Courses</span></h2>
+    </div>
+    <div class="certs-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏛️</div>
+        <div class="cert-issuer">AICTE</div>
+        <div class="cert-name">Embedded System Developer Virtual Internship</div>
+        <div class="cert-date">Virtual Internship</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🌍</div>
+        <div class="cert-issuer">World Health Organization</div>
+        <div class="cert-name">Medical Equipment Electrical Safety Testing</div>
+        <div class="cert-date">September 7, 2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🐍</div>
+        <div class="cert-issuer">Coursera</div>
+        <div class="cert-name">Crash Course on Python</div>
+        <div class="cert-date">April 17, 2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">📐</div>
+        <div class="cert-issuer">MathWorks</div>
+        <div class="cert-name">MATLAB Onramp</div>
+        <div class="cert-date">June 2025</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">📡</div>
+        <div class="cert-issuer">MathWorks</div>
+        <div class="cert-name">Signal Processing Onramp</div>
+        <div class="cert-date">June 2025</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🖼️</div>
+        <div class="cert-issuer">MathWorks</div>
+        <div class="cert-name">Image Processing Onramp</div>
+        <div class="cert-date">June 2025</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏥</div>
+        <div class="cert-issuer">Sri Narayani Hospital</div>
+        <div class="cert-name">Biomedical Engineer Internship Certificate</div>
+        <div class="cert-date">December 2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">⚙️</div>
+        <div class="cert-issuer">Workshop</div>
+        <div class="cert-name">German Technology Workshop Certificate</div>
+        <div class="cert-date">2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">💻</div>
+        <div class="cert-issuer">Event</div>
+        <div class="cert-name">Hackathon &amp; Beyond Certificate</div>
+        <div class="cert-date">2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🏆</div>
+        <div class="cert-issuer">Healthathon</div>
+        <div class="cert-name">Volunteer Certificate — Healthathon</div>
+        <div class="cert-date">2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎯</div>
+        <div class="cert-issuer">Tekmux</div>
+        <div class="cert-name">Tekmux Participation Certificate</div>
+        <div class="cert-date">2024</div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon">🎭</div>
+        <div class="cert-issuer">Club Wars</div>
+        <div class="cert-name">Club Wars Participation Certificate</div>
+        <div class="cert-date">2024</div>
+      </div>
+
+    </div>
+
+    <!-- Certificate image showcase -->
+    <div style="margin-top:2rem; text-align:center" class="reveal">
+      <img src="images/cert_python.jpg" alt="Python Certificate" style="max-width:500px;width:100%;border-radius:10px;border:1px solid var(--border2);box-shadow:var(--glow)"/>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════ ACHIEVEMENTS ═══════════════ -->
+<section id="achievements">
+  <div class="section-wrap">
+    <div class="reveal">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-heading" style="margin-bottom:0">Achievements &amp; <span class="outline-text">Awards</span></h2>
+    </div>
+    <div class="achievements-grid" style="margin-top:3rem">
+
+      <div class="achievement-card reveal">
+        <div class="ach-img-wrap">
+          <img src="images/ideathon1.jpg" alt="Ideathon Win" class="ach-img"/>
+          <div class="ach-overlay"></div>
+          <span class="ach-badge">🏆 WINNER</span>
+        </div>
+        <div class="ach-body">
+          <div class="ach-title">Ideathon Winner — SRM University</div>
+          <div class="ach-desc">Won the Ideathon competition at SRM University, showcasing innovative healthcare solutions and biomedical engineering concepts. Demonstrated exceptional problem-solving and creative thinking in a competitive environment.</div>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="ach-img-wrap">
+          <img src="images/ideathon2.jpg" alt="Ideathon Award" class="ach-img"/>
+          <div class="ach-overlay"></div>
+          <span class="ach-badge">🥇 1ST PLACE</span>
+        </div>
+        <div class="ach-body">
+          <div class="ach-title">Ideathon Recognition &amp; Award</div>
+          <div class="ach-desc">Received formal recognition and award certificate for first-place performance at the Ideathon. Project focused on innovative biomedical solutions with real-world clinical applicability and patient-centered design.</div>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="ach-img-wrap" style="background:linear-gradient(135deg,rgba(0,212,255,0.12),rgba(124,58,237,0.12));height:260px;display:flex;align-items:center;justify-content:center;font-size:5rem">
+          🎓
+        </div>
+        <div class="ach-body">
+          <div class="ach-title">Healthcare Domain Head — Aakash Research Labs</div>
+          <div class="ach-desc">Selected to lead the healthcare vertical at Aakash Research Labs, SRM University. Responsible for team coordination, innovation direction, and driving forward medical technology projects with real-world impact.</div>
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="ach-img-wrap" style="background:linear-gradient(135deg,rgba(16,185,129,0.12),rgba(0,212,255,0.12));height:260px;display:flex;align-items:center;justify-content:center;font-size:5rem">
+          🏥
+        </div>
+        <div class="ach-body">
+          <div class="ach-title">Clinical Internship — Sri Narayani Hospital</div>
+          <div class="ach-desc">Completed hands-on clinical internship at Sri Narayani Hospital &amp; Research Center, gaining practical experience with medical equipment operation, maintenance, troubleshooting, and hospital safety standards.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CONTACT ═══════════════ -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="contact-inner reveal">
+      <div class="section-label" style="justify-content:center">Get In Touch</div>
+      <h2 class="contact-heading">
+        Let's <span class="outline-text">Connect</span>
+      </h2>
+      <p class="contact-sub">
+        Open to research collaborations, internship opportunities, and conversations about biomedical innovation and healthcare technology. Let's build something meaningful together.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:hema.govindaraji@gmail.com" class="btn btn-primary">✉ hema.govindaraji@gmail.com</a>
+        <a href="https://www.linkedin.com/in/hema-g200510" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+        <a href="https://github.com/Hema200510" target="_blank" class="btn btn-outline">GitHub ↗</a>
+        <a href="tel:+918925305873" class="btn btn-purple">📞 +91 89253 05873</a>
+      </div>
+      <div class="contact-info-grid">
+        <div class="contact-info-item">
+          <div class="ci-label">Email</div>
+          <div class="ci-val">hema.govindaraji@gmail.com</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-label">Phone</div>
+          <div class="ci-val">+91 89253 05873</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="ci-label">Location</div>
+          <div class="ci-val">Tirupattur, Tamil Nadu, India</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer>
+  <span>© 2026 Hema G — Biomedical Engineering, SRM IST</span>
+  <span>Built with passion + Three.js 🧬</span>
+</footer>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
